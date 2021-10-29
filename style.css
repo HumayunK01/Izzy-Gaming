@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #EAEDED;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #080B10;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: #fff;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.logo_container h1 span {
+    font-weight: 600;
+    color: #23B2EE;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navigation a li:hover {
+    color: #23B2EE;
+    transition: ease 0.4s;
+}
+
+.banner {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #0892D0 -26.48%, transparent);
+}
+
+.banner h1{
+    color: #080B10;
+    font-size: 42px;
+}
+
+.topnav {
+    padding-top: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.topnav .search-box {
+    height: 50px;
+    width: 700px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.topnav i {
+    padding-left: 20px;
+    background: #23B2EE;
+    height: 33px;
+    width: 40px;
+    padding-top: 17px;
+    cursor: pointer;
+}
+
+.topnav i:hover {
+    color: #fff;
+    transition: ease 0.3s;
+}
+
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+    opacity: 0.2;
+}
+
+/* card 1 starts from here */
+
+.card1 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.card1 h1{
+    font-size: 38px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #080B10;
+}
+
+.game1 {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    margin-left: -140px;
+    box-sizing: border-box;
+}
+
+.game1 img{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    transition-timing-function: linear;
+}
+
+.game1 img:hover{
+    transform: translateY(-15%);
+    transition: ease 0.4s;
+}
+
+.game1 i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    padding: 20px;
+    cursor: pointer;
+    color: grey;
+    transition: ease-out 0s;
+    height: 15px;
+    margin-top: 170px;
+    transition: ease-out 0.3s;
+}
+
+.game1 i:hover{
+    transform: translateX(25%);
+    transition: ease 0.3s;
+}
