@@ -8,10 +8,6 @@
     list-style: none;
 }
 
-body {
-    background: #EAEDED;
-}
-
 .header {
     width: 100%;
     height: 80px;
@@ -44,7 +40,7 @@ body {
 
 .logo_container h1 span {
     font-weight: 600;
-    color: #23B2EE;
+    color: #0072ce;
 }
 
 .navigation {
@@ -73,7 +69,7 @@ body {
 }
 
 .navigation a li:hover {
-    color: #23B2EE;
+    color: #0072ce;
     transition: ease 0.4s;
 }
 
@@ -84,7 +80,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #0892D0 -26.48%, transparent);
+    background-image: linear-gradient(to bottom, #0072ce -26.48%, transparent);
 }
 
 .banner h1{
@@ -109,7 +105,7 @@ body {
 
 .topnav i {
     padding-left: 20px;
-    background: #23B2EE;
+    background: #0072ce;
     height: 33px;
     width: 40px;
     padding-top: 17px;
@@ -185,4 +181,96 @@ body {
 .game1 i:hover{
     transform: translateX(25%);
     transition: ease 0.3s;
+}
+
+/* ps5 section starts from here */
+
+.ps5 {
+    width: 100%;
+    height: 100vh;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+.title-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-one {
+    position: relative;
+    margin: 20px;
+    z-index: -1000;
+}
+
+.title-one p {
+    text-align: center;
+    font-size: 19px;
+    color: #0072ce;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.title-two h1 {
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.title-three p {
+    text-align: center;
+    line-height: 80px;
+    font-weight: 500;
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+.title-image {
+    display: flex;
+    margin: 20px;
+}
+
+.title-image img {
+    width: 45%;
+    padding-right: 35px;
+}
+
+.title-head {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 320px;
+    object-position: center;
+}
+
+.title-image h1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.title-image p {
+    font-weight: 500;
+    opacity: 0.7;
+    font-size: 22px;
+    line-height: 1.3em;
+}
+
+.title-image h3 {
+    background: #2D64E6;
+    position: absolute;
+    margin-top: 140px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: ease-out 0.2s;
+}
+
+.title-image h3:hover {
+    color: #fff;
+    transition: ease 0.2s;
 }
