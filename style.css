@@ -1,311 +1,410 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    list-style: none;
+:root {
+  --primary: hsla(2, 65%, 44%, 0.65);
+  --secondary: hsla(212, 80%, 42%, 0.65);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 .header {
-    width: 100%;
-    height: 80px;
-    display: block;
-    background-color: #080B10;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  position: sticky;
+  background-color: #fff;
+  z-index: 10000;
 }
 
 .inner_header {
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .logo_container {
-    height: 100%;
-    display: table;
-    float: left;
+  height: 100%;
+  display: table;
+  float: left;
 }
 
 .logo_container h1 {
-    color: #fff;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 32px;
-    font-weight: 200;
-    cursor: pointer;
+  color: #000;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 200;
+  cursor: pointer;
 }
 
 .logo_container h1 span {
-    font-weight: 600;
-    color: #0072ce;
+  font-weight: 600;
+  color: #0072ce;
 }
 
 .navigation {
-    float: right;
-    height: 100%;
+  float: right;
+  height: 100%;
 }
 
 .navigation a {
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0 20px;
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0 20px;
 }
 
 .navigation a:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .navigation a li:hover {
-    color: #0072ce;
-    transition: ease 0.4s;
+  color: #0072ce;
+  transition: ease 0.4s;
 }
 
 .banner {
-    width: 100%;
-    height: 91vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #0072ce -26.48%, transparent);
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(Images/Banner.jpg) 0.6%;
+  object-fit: contain;
 }
 
-.banner h1{
-    color: #080B10;
-    font-size: 42px;
+.banner h1 {
+  color: #fff;
+  font-size: 42px;
 }
 
 .topnav {
-    padding-top: 40px;
-    display: flex;
-    overflow: hidden;
+  padding-top: 40px;
+  display: flex;
+  overflow: hidden;
 }
 
 .topnav .search-box {
-    height: 50px;
-    width: 700px;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
+  height: 50px;
+  width: 700px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50px 0 0 50px;
 }
 
 .topnav i {
-    padding-left: 20px;
-    background: #0072ce;
-    height: 33px;
-    width: 40px;
-    padding-top: 17px;
-    cursor: pointer;
-}
-
-.topnav i:hover {
-    color: #fff;
-    transition: ease 0.3s;
+  color: #fff;
+  padding-left: 20px;
+  background: #0072ce;
+  height: 33px;
+  width: 40px;
+  padding-top: 17px;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
 }
 
 .divider {
-    width: 100%;
-    height: 5px;
-    background-color: grey;
-    opacity: 0.2;
+  width: 100%;
+  height: 5px;
+  background-color: grey;
+  opacity: 0.2;
 }
 
 /* card 1 starts from here */
 
 .card1 {
-    width: 100%;
-    height: 600px;
-    display: flex;
+  width: 100%;
+  height: 600px;
+  display: flex;
 }
 
-.card1 h1{
-    font-size: 38px;
-    font-weight: 300;
-    padding: 20px;
+.card1 h1 {
+  font-size: 38px;
+  font-weight: 300;
+  padding: 20px;
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    background-color: #080B10;
+  width: 100%;
+  height: 1px;
+  background-color: #080b10;
 }
 
 .game1 {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    display: flex;
-    margin-left: -140px;
-    box-sizing: border-box;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  display: flex;
+  margin-left: -140px;
+  box-sizing: border-box;
 }
 
-.game1 img{
-    border-radius: 20px;
-    cursor: pointer;
-    transition: ease-out 0.3s;
-    transition-timing-function: linear;
+.game1 img {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+  transition-timing-function: linear;
 }
 
-.game1 img:hover{
-    transform: translateY(-15%);
-    transition: ease 0.4s;
+.game1 img:hover {
+  transform: translateY(-15%);
+  transition: ease 0.4s;
 }
 
 .game1 i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 52px;
-    padding: 20px;
-    cursor: pointer;
-    color: grey;
-    transition: ease-out 0s;
-    height: 15px;
-    margin-top: 170px;
-    transition: ease-out 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  padding: 20px;
+  cursor: pointer;
+  color: grey;
+  transition: ease-out 0s;
+  height: 15px;
+  margin-top: 170px;
+  transition: ease-out 0.3s;
 }
 
-.game1 i:hover{
-    transform: translateX(25%);
-    transition: ease 0.3s;
+.game1 i:hover {
+  transform: translateX(25%);
+  transition: ease 0.3s;
 }
 
 /* ps5 section starts from here */
 
 .ps5 {
-    width: 100%;
-    height: 100vh;
-    line-height: 1.5em;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  line-height: 1.5em;
+  box-sizing: border-box;
 }
 
 .title-bar {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-one {
-    position: relative;
-    margin: 20px;
-    z-index: -1000;
+  position: relative;
+  margin: 20px;
+  z-index: -1000;
 }
 
 .title-one p {
-    text-align: center;
-    font-size: 19px;
-    color: #0072ce;
-    font-weight: 500;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+  color: #0072ce;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
 .title-two h1 {
-    font-size: 42px;
-    font-weight: 300;
-    text-align: center;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .title-three p {
-    text-align: center;
-    line-height: 80px;
-    font-weight: 500;
-    opacity: 0.7;
-    font-size: 22px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 500;
+  opacity: 0.7;
+  font-size: 22px;
 }
 
 .title-image {
-    display: flex;
-    margin: 20px;
+  display: flex;
+  margin: 20px;
 }
 
 .title-image img {
-    width: 45%;
-    padding-right: 35px;
+  width: 45%;
+  padding-right: 35px;
 }
 
 .title-head {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-top: 320px;
-    object-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 320px;
+  object-position: center;
 }
 
 .title-image h1 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 60px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 60px;
 }
 
 .title-image p {
-    font-weight: 500;
-    opacity: 0.7;
-    font-size: 22px;
-    line-height: 1.3em;
+  font-weight: 500;
+  opacity: 0.7;
+  font-size: 22px;
+  line-height: 1.3em;
 }
 
 .title-image h3 {
-    background: #2D64E6;
-    position: absolute;
-    margin-top: 140px;
-    padding: 15px;
-    cursor: pointer;
-    font-weight: 500;
-    border-radius: 50px;
-    transition: ease-out 0.2s;
+  background: #2d64e6;
+  position: absolute;
+  margin-top: 140px;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: ease-out 0.2s;
 }
 
 .title-image h3:hover {
-    color: #fff;
-    transition: ease 0.2s;
+  color: #fff;
+  transition: ease 0.2s;
 }
 
 /* hero section starts from here */
 
 .hero {
-    width: 100%;
-    height: 73vh;
+  width: 100%;
+  height: 73vh;
 }
 
 /* ps4 section starts from here */
 
 .ps4 {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
-.ps4 .ps4-head{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+.ps4 .ps4-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
-.ps4 .ps4-head h1{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 60px;
+.ps4 .ps4-head h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 60px;
 }
 
-.ps4 .ps4-head p{
-    font-weight: 500;
-    opacity: 0.7;
-    font-size: 22px;
-    line-height: 1.5em;
+.ps4 .ps4-head p {
+  font-weight: 500;
+  opacity: 0.7;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.pscard1all {
+  position: relative;
+  margin-left: 200px;
+  margin-top: 200px;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  display: flex;
+  width: 80%;
+}
+
+.pscard1 {
+  position: relative;
+  padding: 20px;
+  left: 0;
+  transform: unset;
+  width: 30%;
+}
+
+.pscard1 .psimg img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.pscard1 .psinfo {
+  padding: 20px;
+}
+
+.pscard1 .psinfo h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.pscard1 .psinfo p {
+  font-size: 20px;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.pscard1 .psinfo button {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 21px;
+  border: none;
+  background: #0072ce;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pscard2 {
+  margin-top: -50px;
+  position: relative;
+  padding: 20px;
+  left: 0;
+  transform: unset;
+  width: 30%;
+}
+
+.pscard2 .psimg img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.pscard2 .psinfo {
+  padding: 20px;
+}
+
+.pscard2 .psinfo h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.pscard2 .psinfo p {
+  font-size: 20px;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.pscard2 .psinfo button {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 21px;
+  border: none;
+  background: #0072ce;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
 }
